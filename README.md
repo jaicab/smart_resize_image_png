@@ -1,9 +1,7 @@
 #smart_resize_image_png
 Resizes you image and returns a PNG in a lot of different ways. You don't have to worry about ratios, transparencys or file types, you'll get a PNG just as you wish.
 
-Currently on development.
-
-Forked from [maxim's](https://github.com/maxim/smart_resize_image).
+Forked from [@maxim](https://github.com/maxim/smart_resize_image)'s.
 
 ##Features/Usage:
 
