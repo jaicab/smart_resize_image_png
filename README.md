@@ -16,7 +16,7 @@ Forked from [maxim's](https://github.com/maxim/smart_resize_image).
 * The function supports gif, png, and jpeg, and preserves the transparency of gif and png images.
 * Tested on GD version 2.0.28 only. 
 
-There is a parameter "output" which can be set to either
+There is a parameter "output" which can be set to either:  
 * "file" - overwrite the given file (default)
 * "browser" - output image through http - with correct mime type
 * "return" - return GD Library Image object
@@ -32,7 +32,7 @@ There is another parameter "delete_original". Speaks for itself.
 
 ##License
 
-Copyright (c) 2008 Maxim Chernyak
+Copyright (c) 2008 Maxim Chernyak  
 Copyright (c) 2014 Jaime Caballero
  
 Permission is hereby granted, free of charge, to any person obtaining
