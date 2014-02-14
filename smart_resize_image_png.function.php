@@ -1,5 +1,5 @@
 <?
-  function smart_resize_image($file,
+  function smart_resize_image_png($file,
                               $width              = 0, 
                               $height             = 0, 
                               $proportional       = false, 
@@ -68,7 +68,7 @@
     # Preparing a method of providing result
     switch ( strtolower($output) ) {
       case 'browser':
-        $mime = image_type_to_mime_type(IMAGETYPE_PNG);
+        $mime = image_type_to_mime_type(IMAGETYPE_PNG); // I've said... PNG ALWAYS
         header("Content-type: $mime");
         $output = NULL;
       break;
@@ -82,7 +82,7 @@
       break;
     }
     
-    //return as png
+    // Return always as PNG
     imagepng($image_resized, $output);
 
     return true;
