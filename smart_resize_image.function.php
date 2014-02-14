@@ -68,7 +68,7 @@
     # Preparing a method of providing result
     switch ( strtolower($output) ) {
       case 'browser':
-        $mime = image_type_to_mime_type($info[2]);
+        $mime = image_type_to_mime_type(IMAGETYPE_PNG);
         header("Content-type: $mime");
         $output = NULL;
       break;
@@ -82,13 +82,8 @@
       break;
     }
     
-    # Writing image according to type to the output destination
-    switch ( $info[2] ) {
-      case IMAGETYPE_GIF:   imagegif($image_resized, $output);    break;
-      case IMAGETYPE_JPEG:  imagejpeg($image_resized, $output);   break;
-      case IMAGETYPE_PNG:   imagepng($image_resized, $output);    break;
-      default: return false;
-    }
+    //return as png
+    imagepng($image_resized, $output);
 
     return true;
   }
